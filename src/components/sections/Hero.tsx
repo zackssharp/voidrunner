@@ -60,7 +60,7 @@ export default function Hero() {
             className="animate-fade-in-up mt-4 text-xs text-muted"
             style={{ animationDelay: "300ms" }}
           >
-            In development for Windows &amp; macOS
+            Out now &mdash; free for Windows &amp; macOS
           </p>
         </div>
 

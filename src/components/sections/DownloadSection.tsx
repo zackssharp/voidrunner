@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const included = [
   "The full base game — nothing paywalled",
-  "All future seasonal track drops",
-  "Cross-platform multiplayer for up to 8 racers",
+  "Free post-launch content updates",
+  "Cross-platform online multiplayer",
   "No ads, no loot boxes, no hidden fees",
 ];
 

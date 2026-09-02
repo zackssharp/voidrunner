@@ -25,9 +25,9 @@ export const FOUNDERS_PACK = {
   currency: "CAD",
   checkoutUrl: "",
   items: [
-    "Closed beta access before the public launch",
     "Six exclusive Founder car liveries",
     "Numbered Founder badge on your in-game profile",
+    "Supporter role in the official Discord",
     "Your name in the in-game Founders credits",
   ],
 };

@@ -20,8 +20,8 @@ export default function FoundersPack() {
           </h2>
           <p className="mt-4 text-base leading-7 text-muted sm:text-lg">
             {GAME.title} is free to download and always will be. The Founder&rsquo;s
-            Pack is an optional one-time purchase that funds development and gets
-            you into the game early.
+            Pack is an optional one-time purchase &mdash; cosmetic extras and a
+            credit &mdash; for players who want to support ongoing development.
           </p>
         </div>
 
@@ -71,9 +71,9 @@ export default function FoundersPack() {
             )}
 
             <p className="mt-4 text-center text-xs leading-5 text-muted">
-              Delivered as a license key by email right after checkout. Beta
-              access and in-game items unlock at their launch dates. Payments are
-              processed by Stripe. See our{" "}
+              Delivered as a license key by email right after checkout; redeem it
+              in-game to unlock your items. Payments are processed by Stripe. See
+              our{" "}
               <Link
                 href="/refunds"
                 className="underline underline-offset-2 hover:text-accent-soft"

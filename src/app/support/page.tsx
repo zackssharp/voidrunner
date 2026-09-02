@@ -72,8 +72,8 @@ export default function SupportPage() {
                   <>
                     The base game is free. For the Founder&rsquo;s Pack, email
                     us for key or delivery issues, or a refund within 14 days if
-                    beta access hasn&rsquo;t been activated &mdash; full details
-                    in our{" "}
+                    the key hasn&rsquo;t been redeemed &mdash; full details in
+                    our{" "}
                     <Link
                       href="/refunds"
                       className="text-accent-soft underline underline-offset-2"

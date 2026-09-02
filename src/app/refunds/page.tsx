@@ -23,8 +23,8 @@ export default function RefundsPage() {
           {FOUNDERS_PACK.name} ({FOUNDERS_PACK.price} {FOUNDERS_PACK.currency},
           one-time) is a paid digital product delivered by email as a license
           key right after checkout. You can request a full refund of the
-          Founder&rsquo;s Pack within 14 days of purchase as long as closed beta
-          access has not yet been activated. Contact{" "}
+          Founder&rsquo;s Pack within 14 days of purchase as long as the license
+          key has not been redeemed. Contact{" "}
           <a href={`mailto:${STUDIO.supportEmail}`} className="underline underline-offset-2 hover:text-accent-soft">
             {STUDIO.supportEmail}
           </a>
@@ -42,9 +42,10 @@ export default function RefundsPage() {
           <li>
             <span className="text-foreground">{FOUNDERS_PACK.name}</span> &mdash;
             optional one-time purchase, {FOUNDERS_PACK.price}{" "}
-            {FOUNDERS_PACK.currency}. Includes closed beta access, six Founder
-            car liveries, a numbered profile badge, and a credit in the in-game
-            Founders list.
+            {FOUNDERS_PACK.currency}. Includes six Founder car liveries, a
+            numbered profile badge, a Discord supporter role, and a credit in
+            the in-game Founders list. Cosmetic content only; it confers no
+            gameplay advantage.
           </li>
         </ul>
         <p className="mt-3">
@@ -96,9 +97,9 @@ export default function RefundsPage() {
             normally within a few minutes and no later than 24 hours.
           </li>
           <li>
-            The key unlocks closed beta access when the beta opens and the
-            in-game cosmetic items when the game launches. Purchasing before
-            those dates is a pre-order of that content.
+            You redeem the key in-game to unlock the Founder liveries and
+            profile badge. The Discord supporter role and Founders credit are
+            applied once we confirm your order.
           </li>
         </ol>
         <p className="mt-3">
@@ -120,10 +121,9 @@ export default function RefundsPage() {
         </p>
         <p className="mt-3">
           For the {FOUNDERS_PACK.name}, you may request a full refund within 14
-          days of purchase, provided your license key has not yet been used to
-          activate closed beta access. Once beta access has been activated, the
-          purchase is non-refundable because the digital content has been
-          delivered and consumed.
+          days of purchase, provided the license key has not been redeemed in
+          game. Once the key has been redeemed, the purchase is non-refundable
+          because the digital content has been delivered.
         </p>
         <p className="mt-3">
           To request a refund, email{" "}

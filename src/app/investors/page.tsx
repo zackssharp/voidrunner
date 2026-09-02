@@ -11,7 +11,7 @@ const snapshot = [
   { label: "Founded", value: "2026" },
   { label: "Headquarters", value: "Vancouver, BC, Canada" },
   { label: "Ownership", value: "Privately held" },
-  { label: "Stage", value: "Pre-launch, first title in development" },
+  { label: "Stage", value: "First title released; growing the player base" },
 ];
 
 export default function InvestorsPage() {
@@ -27,11 +27,11 @@ export default function InvestorsPage() {
 
         <div className="mt-10 space-y-8 text-sm leading-7 text-muted sm:text-base sm:leading-8">
           <p>
-            {STUDIO.legalName} is an independent studio building{" "}
+            {STUDIO.legalName} is an independent studio behind{" "}
             <span className="text-foreground">Fury Racing</span>, a free arcade
-            racing game monetized through an optional Founder&rsquo;s Pack and
-            post-launch content. We work with a small group of long-term
-            partners who share that roadmap.
+            racing game monetized through an optional cosmetic Founder&rsquo;s
+            Pack and future paid content. We work with a small group of
+            long-term partners who share that roadmap.
           </p>
 
           <section>

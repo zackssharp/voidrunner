@@ -25,31 +25,31 @@ const features: Feature[] = [
     icon: Route,
     title: "Tracks That Never Sit Still",
     description:
-      "Race twelve circuits where weather rolls in, barriers shift, and shortcuts open and close from one lap to the next.",
+      "Race circuits where weather rolls in, barriers shift, and shortcuts open and close from one lap to the next.",
   },
   {
     icon: Users,
-    title: "Drop-In Multiplayer",
+    title: "Online Multiplayer",
     description:
-      "Jump into ranked or casual lobbies for up to eight racers, with full cross-play between Windows and macOS — no extra setup required.",
+      "Race other players in online lobbies, with cross-play between the Windows and macOS builds.",
   },
   {
     icon: Wrench,
     title: "Garage & Tuning",
     description:
-      "Swap over 40 parts and dial in gearing, downforce, and tire compound to build a car that matches your line.",
+      "Swap parts and dial in gearing, downforce, and tire compound to build a car that matches your line.",
   },
   {
     icon: Trophy,
     title: "Rival Circuit Career",
     description:
-      "Climb a season-long ladder where AI rivals remember how you race and come back faster at every event.",
+      "Work through a career ladder against AI rivals that push back harder as you climb.",
   },
   {
     icon: CalendarClock,
-    title: "Seasonal Track Drops",
+    title: "Free Content Updates",
     description:
-      "New circuits, liveries, and time-trial ghosts land every season — always at no additional cost.",
+      "Post-launch updates add new circuits, liveries, and time-trial challenges at no additional cost.",
   },
 ];
 

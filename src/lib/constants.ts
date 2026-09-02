@@ -2,14 +2,14 @@ export const STUDIO = {
   name: "Spectre River",
   legalName: "Spectre River LLC",
   address: {
-    line1: "1200 Harbor Boulevard, Suite 400",
-    line2: "Seattle, WA 98134, United States",
+    line1: "6433 Cartier St",
+    line2: "Vancouver, BC V6M 0E2, Canada",
   },
   supportEmail: "zackssharp@gmail.com",
-  domain: "voidrunnergame.com",
+  domain: "spectreriver.com",
 };
 
 export const GAME = {
   title: "Fury Racing",
-  tagline: "The void doesn't wait for the weak.",
+  tagline: "The spectre doesn't wait for the weak.",
 };

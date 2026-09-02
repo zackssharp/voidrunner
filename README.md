@@ -15,8 +15,15 @@ through Stripe.
 
 ```bash
 npm install
+cp .env.example .env.local   # add your ANTHROPIC_API_KEY for the /support assistant
 npm run dev
 ```
+
+Without `ANTHROPIC_API_KEY` the site runs fine; the `/support` chat just returns
+a "not configured" message. The assistant's knowledge base is every `.txt` /
+`.md` file in `public/rag/` — edit those and restart the dev server. It uses
+`claude-opus-5`; for a high-traffic widget switch `MODEL` in
+`src/app/api/support-chat/route.ts` to `claude-haiku-4-5`.
 
 Open http://localhost:3000. Production build:
 
@@ -33,6 +40,9 @@ npm run start
   Fulfillment & Refund Policy covering both the free download and the paid
   Founder's Pack (delivery method, timeframe, 14-day refund window).
 - `/support`, `/careers`, `/investors` — customer service and company pages.
+  `/support` embeds an AI assistant (`src/components/support/SupportChat.tsx` →
+  `src/app/api/support-chat/route.ts`) that answers from the text files in
+  `public/rag/` via the Claude API.
 - Global `Navbar` and `Footer` (legal name, mailing address, support email,
   phone) on every route.
 - "Claim Free Download" opens a modal (`src/components/checkout/CheckoutModal.tsx`)

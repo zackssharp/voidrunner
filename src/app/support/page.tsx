@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Download, Mail, Bug, ReceiptText } from "lucide-react";
 import { GAME, STUDIO } from "@/lib/constants";
+import SupportChat from "@/components/support/SupportChat";
 
 export const metadata: Metadata = {
   title: `Customer Service | ${STUDIO.name}`,
@@ -54,6 +55,17 @@ export default function SupportPage() {
           </a>{" "}
           or call {STUDIO.phone}. We aim to reply within two business days.
         </p>
+
+        <div className="mt-12">
+          <h2 className="text-base font-semibold text-foreground">
+            Ask the assistant
+          </h2>
+          <p className="mt-1 text-sm text-muted">
+            Quick answers about downloads, the Founder&rsquo;s Pack, refunds, and
+            system requirements. For anything account-specific, email us.
+          </p>
+          <SupportChat />
+        </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {topics.map((topic) => (

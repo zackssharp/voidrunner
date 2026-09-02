@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-border-subtle/80 bg-surface/60">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-2 font-display text-base font-bold tracking-wide">
               <span className="flex h-7 w-7 items-center justify-center rounded-md bg-accent/15 text-accent">
@@ -23,6 +23,36 @@ export default function Footer() {
             <p className="mt-3 max-w-xs text-sm leading-6 text-muted">
               A free sci-fi action game built by {STUDIO.name}. 
             </p>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold text-foreground">Company</h3>
+            <ul className="mt-3 space-y-2.5">
+              <li>
+                <Link
+                  href="/support"
+                  className="text-sm text-muted transition-colors hover:text-accent-soft"
+                >
+                  Customer Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/careers"
+                  className="text-sm text-muted transition-colors hover:text-accent-soft"
+                >
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/investors"
+                  className="text-sm text-muted transition-colors hover:text-accent-soft"
+                >
+                  Investor Relations
+                </Link>
+              </li>
+            </ul>
           </div>
 
           <div>

@@ -1,10 +1,10 @@
 import {
-  Swords,
-  Orbit,
+  Gauge,
+  Route,
   Users,
-  Sparkles,
-  ShieldHalf,
+  Wrench,
   Trophy,
+  CalendarClock,
   type LucideIcon,
 } from "lucide-react";
 
@@ -16,40 +16,40 @@ type Feature = {
 
 const features: Feature[] = [
   {
-    icon: Swords,
-    title: "Fluid Momentum Combat",
+    icon: Gauge,
+    title: "Weight-Shift Handling",
     description:
-      "Chain melee, gunplay, and zero-G dashes into seamless combos. Every encounter rewards precision over button-mashing.",
+      "Brake, drift, and boost with a handling model that rewards reading the corner ahead instead of holding the throttle flat.",
   },
   {
-    icon: Orbit,
-    title: "Living Star Systems",
+    icon: Route,
+    title: "Tracks That Never Sit Still",
     description:
-      "Explore six procedurally-shifting sectors where gravity wells, debris fields, and collapsing stations change every run.",
+      "Race twelve circuits where weather rolls in, barriers shift, and shortcuts open and close from one lap to the next.",
   },
   {
     icon: Users,
-    title: "Drop-In Co-Op",
+    title: "Drop-In Multiplayer",
     description:
-      "Squad up with up to three friends with full cross-platform play between Windows and macOS — no extra setup required.",
+      "Jump into ranked or casual lobbies for up to eight racers, with full cross-play between Windows and macOS — no extra setup required.",
   },
   {
-    icon: Sparkles,
-    title: "Deep Loadout Customization",
+    icon: Wrench,
+    title: "Garage & Tuning",
     description:
-      "Unlock over 40 weapon mods and pilot augments to build a playstyle that's entirely your own.",
-  },
-  {
-    icon: ShieldHalf,
-    title: "Faction Reputation",
-    description:
-      "Side with rival factions across the galaxy to unlock unique storylines, gear, and endings shaped by your choices.",
+      "Swap over 40 parts and dial in gearing, downforce, and tire compound to build a car that matches your line.",
   },
   {
     icon: Trophy,
-    title: "Seasonal Rift Events",
+    title: "Rival Circuit Career",
     description:
-      "Free content drops every season add new bosses, maps, and cosmetics — always at no additional cost.",
+      "Climb a season-long ladder where AI rivals remember how you race and come back faster at every event.",
+  },
+  {
+    icon: CalendarClock,
+    title: "Seasonal Track Drops",
+    description:
+      "New circuits, liveries, and time-trial ghosts land every season — always at no additional cost.",
   },
 ];
 
@@ -62,11 +62,11 @@ export default function Features() {
             Game Features
           </span>
           <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            Built for players who hate downtime
+            Built for players who hate lifting off the throttle
           </h2>
           <p className="mt-4 text-base leading-7 text-muted sm:text-lg">
             Every system in Fury Racing is designed around one idea: keep you
-            in the fight, not the menus.
+            on the racing line, not in the menus.
           </p>
         </div>
 

@@ -33,9 +33,9 @@ export default function Hero() {
             className="animate-fade-in-up mt-6 max-w-xl text-lg leading-8 text-muted sm:text-xl"
             style={{ animationDelay: "160ms" }}
           >
-            {GAME.tagline} Strap into a zero-gravity gunship, outrun collapsing
-            star systems, and rewrite the rules of combat in a galaxy that
-            wants you dead.
+            {GAME.tagline} Drop into the cockpit, chain flawless drifts through
+            neon-lit circuits, and out-brake a full grid of rivals that wants
+            you in the wall.
           </p>
 
           <div

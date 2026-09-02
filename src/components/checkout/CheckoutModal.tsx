@@ -257,11 +257,11 @@ export default function CheckoutModal() {
               <CheckCircle2 className="h-7 w-7" aria-hidden="true" />
             </div>
             <h2 className="mt-5 font-display text-xl font-bold tracking-tight">
-              You&rsquo;re all set, {form.firstName || "pilot"}!
+              You&rsquo;re all set, {form.firstName || "racer"}!
             </h2>
             <p className="mt-2 text-sm leading-6 text-muted">
-              Your Fury Racing installer is ready. A backup download link has
-              also been sent to {form.email || "your email"}.
+              Your Fury Racing installer is ready. Use the button below to
+              download it now.
             </p>
 
             <a

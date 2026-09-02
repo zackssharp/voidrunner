@@ -1,4 +1,4 @@
-import { ArrowRight, PlayCircle, Star } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import DownloadTriggerButton from "@/components/checkout/DownloadTriggerButton";
 import { GAME } from "@/lib/constants";
 
@@ -48,11 +48,10 @@ export default function Hero() {
             </DownloadTriggerButton>
 
             <a
-              href="#trailer"
+              href="#founders-pack"
               className="inline-flex items-center gap-2 rounded-full border border-border-subtle bg-surface/60 px-8 py-4 text-base font-semibold text-foreground transition-colors hover:border-accent-soft/50 hover:text-accent-soft"
             >
-              <PlayCircle className="h-5 w-5" aria-hidden="true" />
-              Watch Trailer
+              See the Founder&rsquo;s Pack
             </a>
           </div>
 
@@ -60,30 +59,19 @@ export default function Hero() {
             className="animate-fade-in-up mt-4 text-xs text-muted"
             style={{ animationDelay: "300ms" }}
           >
-            Available on Windows &amp; macOS &middot; 4.8/5 from 12,400+ early
-            players
+            In development for Windows &amp; macOS
           </p>
         </div>
 
         <div
-          id="trailer"
-          className="animate-fade-in-up relative mx-auto mt-16 aspect-video w-full max-w-5xl overflow-hidden rounded-2xl border border-border-subtle/80 bg-surface shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)] scroll-mt-24"
+          className="animate-fade-in-up relative mx-auto mt-16 flex aspect-video w-full max-w-5xl items-center justify-center overflow-hidden rounded-2xl border border-border-subtle/80 bg-surface shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]"
           style={{ animationDelay: "360ms" }}
         >
           <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(139,92,246,0.25),rgba(9,9,11,0.9)_60%)]" />
           <div className="absolute inset-0 bg-grid opacity-30" />
-          <div className="relative flex h-full w-full flex-col items-center justify-center gap-3">
-            <button
-              type="button"
-              className="flex h-16 w-16 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-sm transition-transform hover:scale-105"
-              aria-label="Play trailer"
-            >
-              <PlayCircle className="h-9 w-9" aria-hidden="true" />
-            </button>
-            <span className="text-sm font-medium text-white/70">
-              Official Gameplay Trailer &middot; 2:14
-            </span>
-          </div>
+          <span className="relative text-sm font-medium text-white/70">
+            Gameplay trailer coming soon
+          </span>
         </div>
       </div>
     </section>

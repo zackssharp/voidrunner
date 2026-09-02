@@ -12,7 +12,7 @@ const topics = [
   {
     icon: Download,
     title: "Download & install",
-    body: "Your download link appears on-screen right after the form and is also emailed to you. If it won't start, check your spam folder or request it again.",
+    body: "Your free download link appears on-screen right after the form. If it won't start, try again or email us and we'll send you a direct link.",
   },
   {
     icon: Mail,
@@ -26,7 +26,7 @@ const topics = [
   },
   {
     icon: ReceiptText,
-    title: "Charges & refunds",
+    title: "Founder's Pack & refunds",
     body: null,
   },
 ];
@@ -52,7 +52,7 @@ export default function SupportPage() {
           >
             {STUDIO.supportEmail}
           </a>{" "}
-          and we aim to reply within two business days.
+          or call {STUDIO.phone}. We aim to reply within two business days.
         </p>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -70,15 +70,17 @@ export default function SupportPage() {
               <p className="mt-2 text-sm leading-6 text-muted">
                 {topic.body ?? (
                   <>
-                    No payment is ever collected, so there is nothing to refund.
-                    If you were charged unexpectedly, see our{" "}
+                    The base game is free. For the Founder&rsquo;s Pack, email
+                    us for key or delivery issues, or a refund within 14 days if
+                    beta access hasn&rsquo;t been activated &mdash; full details
+                    in our{" "}
                     <Link
                       href="/refunds"
                       className="text-accent-soft underline underline-offset-2"
                     >
-                      Fulfillment &amp; Free Product Terms
-                    </Link>{" "}
-                    and contact us right away.
+                      Fulfillment &amp; Refund Policy
+                    </Link>
+                    .
                   </>
                 )}
               </p>
@@ -97,6 +99,14 @@ export default function SupportPage() {
               className="text-accent-soft underline underline-offset-2"
             >
               {STUDIO.supportEmail}
+            </a>
+            <br />
+            Phone:{" "}
+            <a
+              href={`tel:${STUDIO.phoneHref}`}
+              className="text-accent-soft underline underline-offset-2"
+            >
+              {STUDIO.phone}
             </a>
             <br />
             Mail: {STUDIO.legalName}, {STUDIO.address.line1},{" "}

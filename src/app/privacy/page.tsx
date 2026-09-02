@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import LegalLayout from "@/components/legal/LegalLayout";
-import { GAME, STUDIO } from "@/lib/constants";
+import { FOUNDERS_PACK, GAME, STUDIO } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Privacy Policy | ${STUDIO.name}`,
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <LegalLayout title="Privacy Policy" lastUpdated="September 1, 2026">
+    <LegalLayout title="Privacy Policy" lastUpdated="September 2, 2026">
       <p>
         {STUDIO.legalName} (&ldquo;{STUDIO.name}&rdquo;, &ldquo;we&rdquo;,
         &ldquo;us&rdquo;, or &ldquo;our&rdquo;) respects your privacy. This
@@ -33,12 +33,17 @@ export default function PrivacyPage() {
           <li>Your confirmation that you agree to our Terms of Service and Privacy Policy.</li>
         </ul>
         <p className="mt-3">
-          We do not collect payment card numbers, billing addresses, or any
-          other payment information, because {GAME.title} is provided free of
-          charge and no payment method is ever requested. We also
-          automatically collect limited technical information, such as
-          general device type, browser type, and approximate location
-          derived from IP address, for security and analytics purposes.
+          If you buy the {FOUNDERS_PACK.name}, payment is processed by Stripe.
+          We do not receive or store your full card number. Stripe provides us
+          with a transaction confirmation and limited order details, such as
+          the billing name, email address, country, and the last four digits
+          of the card, which we use to deliver your purchase and handle
+          support and refunds.
+        </p>
+        <p className="mt-3">
+          We also automatically collect limited technical information, such as
+          general device type, browser type, and approximate location derived
+          from IP address, for security and analytics purposes.
         </p>
       </section>
 
@@ -48,7 +53,7 @@ export default function PrivacyPage() {
         </h2>
         <p className="mt-3">We use the information we collect to:</p>
         <ul className="mt-3 list-disc space-y-2 pl-5">
-          <li>Deliver your download link and any backup download email;</li>
+          <li>Deliver your download link, and for Founder&rsquo;s Pack orders, your license key and receipt;</li>
           <li>Send important updates about the Game, such as patch notes and seasonal content (you may opt out at any time);</li>
           <li>Respond to support requests sent to {STUDIO.supportEmail};</li>
           <li>Maintain the security, integrity, and performance of the Site and Game;</li>
@@ -75,11 +80,12 @@ export default function PrivacyPage() {
         <p className="mt-3">
           We do not sell your personal information. We may share information
           with trusted service providers who help us operate the Site and
-          deliver downloads (such as email delivery and hosting providers),
-          each bound by confidentiality obligations, or when required to
-          comply with applicable law, legal process, or to protect the
-          rights, property, or safety of {STUDIO.name}, our players, or
-          others.
+          deliver our products &mdash; including hosting and email delivery
+          providers and our payment processor, Stripe, which handles Founder&rsquo;s
+          Pack transactions under its own privacy policy &mdash; each bound by
+          confidentiality obligations, or when required to comply with
+          applicable law, legal process, or to protect the rights, property, or
+          safety of {STUDIO.name}, our players, or others.
         </p>
       </section>
 

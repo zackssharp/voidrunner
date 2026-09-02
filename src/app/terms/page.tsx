@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LegalLayout from "@/components/legal/LegalLayout";
-import { GAME, STUDIO } from "@/lib/constants";
+import { FOUNDERS_PACK, GAME, STUDIO } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Terms of Service | ${STUDIO.name}`,
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <LegalLayout title="Terms of Service" lastUpdated="September 1, 2026">
+    <LegalLayout title="Terms of Service" lastUpdated="September 2, 2026">
       <p>
         These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and
         use of the website located at {STUDIO.domain} (the &ldquo;Site&rdquo;)
@@ -36,15 +36,26 @@ export default function TermsPage() {
 
       <section>
         <h2 className="text-lg font-semibold text-foreground">
-          2. Free Digital Product
+          2. The Game and Paid Products
         </h2>
         <p className="mt-3">
-          {GAME.title} is currently offered as a free digital download at a
-          price of $0.00 USD. No payment, credit card, or other payment
-          instrument is required or collected to access the current version
-          of the Game. Should {STUDIO.name} introduce paid products, add-ons,
-          or subscriptions in the future, those offerings will be governed by
-          additional terms presented to you at the time of purchase.
+          The base version of {GAME.title} is offered as a free digital
+          download at a price of $0.00 CAD. No payment or payment instrument is
+          required or collected to download and play the base game.
+        </p>
+        <p className="mt-3">
+          {STUDIO.name} also offers the {" "}
+          <span className="text-foreground">{FOUNDERS_PACK.name}</span>, an
+          optional one-time purchase priced at {FOUNDERS_PACK.price}{" "}
+          {FOUNDERS_PACK.currency}. Payments for the Founder&rsquo;s Pack are
+          processed by our payment processor, Stripe, and are also governed by
+          Stripe&rsquo;s terms. Delivery, cancellation, and refund terms for the
+          Founder&rsquo;s Pack are described in our{" "}
+          <Link href="/refunds" className="text-accent-soft underline underline-offset-2">
+            Fulfillment &amp; Refund Policy
+          </Link>
+          . The price and contents of the Founder&rsquo;s Pack are shown to you
+          before you complete checkout.
         </p>
       </section>
 

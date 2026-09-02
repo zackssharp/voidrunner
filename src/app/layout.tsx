@@ -9,7 +9,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: `${GAME.title} — Free Download | ${STUDIO.name}`,
   description:
-    "Fury Racing is a free, high-velocity sci-fi action game from Spectre River. Claim your free download today — no payment required.",
+    "Fury Racing is a free, high-velocity arcade racing game from Spectre River. Download the base game free, or grab the Founder's Pack to support development.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

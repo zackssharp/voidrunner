@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { Mail, MapPin, Zap } from "lucide-react";
+import { Mail, MapPin, Phone, Zap } from "lucide-react";
 import { GAME, STUDIO } from "@/lib/constants";
 
 const legalLinks = [
   { href: "/terms", label: "Terms of Service" },
   { href: "/privacy", label: "Privacy Policy" },
-  { href: "/refunds", label: "Fulfillment & Free Product Terms" },
+  { href: "/refunds", label: "Fulfillment & Refund Policy" },
 ];
 
 export default function Footer() {
@@ -21,7 +21,7 @@ export default function Footer() {
               <span>{GAME.title}</span>
             </div>
             <p className="mt-3 max-w-xs text-sm leading-6 text-muted">
-              A free sci-fi action game built by {STUDIO.name}. 
+              A free arcade racing game built by {STUDIO.name}.
             </p>
           </div>
 
@@ -91,6 +91,15 @@ export default function Footer() {
                   className="transition-colors hover:text-accent-soft"
                 >
                   {STUDIO.supportEmail}
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone className="h-4 w-4 shrink-0 text-accent-soft" aria-hidden="true" />
+                <a
+                  href={`tel:${STUDIO.phoneHref}`}
+                  className="transition-colors hover:text-accent-soft"
+                >
+                  {STUDIO.phone}
                 </a>
               </li>
             </ul>

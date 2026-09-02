@@ -3,9 +3,9 @@ import DownloadTriggerButton from "@/components/checkout/DownloadTriggerButton";
 import Link from "next/link";
 
 const included = [
-  "Full base game — no chapters locked",
-  "All future seasonal content updates",
-  "Cross-platform co-op for up to 4 players",
+  "The full base game — nothing paywalled",
+  "All future seasonal track drops",
+  "Cross-platform multiplayer for up to 8 racers",
   "No ads, no loot boxes, no hidden fees",
 ];
 
@@ -25,7 +25,7 @@ export default function DownloadSection() {
           <div className="border-b border-border-subtle/80 bg-surface-2/40 px-6 py-8 text-center sm:px-10">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-400">
               <ShieldCheck className="h-3.5 w-3.5" aria-hidden="true" />
-              Free Forever &mdash; Verified Launch Build
+              Free Download &mdash; No Account Required
             </span>
             <h2 className="mt-5 font-display text-2xl font-bold tracking-tight sm:text-3xl">
               Claim your free download
@@ -35,13 +35,10 @@ export default function DownloadSection() {
             </p>
 
             <div className="mt-6 flex items-end justify-center gap-3">
-              <span className="text-lg text-muted line-through decoration-2">
-                $59.99
-              </span>
               <span className="font-display text-5xl font-black text-foreground">
                 $0.00
               </span>
-              <span className="pb-1.5 text-sm font-medium text-muted">USD</span>
+              <span className="pb-1.5 text-sm font-medium text-muted">CAD</span>
             </div>
           </div>
 
@@ -62,7 +59,7 @@ export default function DownloadSection() {
             </DownloadTriggerButton>
 
             <p className="mt-4 text-center text-xs leading-5 text-muted">
-              No credit card or payment information is ever requested. By
+              No account or payment is required for the free download. By
               downloading, you agree to our{" "}
               <Link href="/terms" className="underline underline-offset-2 hover:text-accent-soft">
                 Terms of Service

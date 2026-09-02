@@ -72,7 +72,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} {STUDIO.legalName}. All rights
             reserved.
           </p>
-          <p>All game titles and imagery are property of {STUDIO.legalName}.</p>
+          <p>All game assets and imagery are property of {STUDIO.legalName}.</p>
         </div>
       </div>
     </footer>

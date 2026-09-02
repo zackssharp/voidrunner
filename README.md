@@ -1,6 +1,6 @@
 # VOIDRUNNER — Marketing Site
 
-A free-to-download game landing page built for **Nightspire Interactive**, structured to satisfy Stripe's business-account review requirements for a $0.00 digital product.
+A free-to-download game landing page built for **Spectre River**, structured to satisfy Stripe's business-account review requirements for a $0.00 digital product.
 
 ## Stack
 

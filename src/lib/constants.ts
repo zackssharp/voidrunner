@@ -1,11 +1,11 @@
 export const STUDIO = {
-  name: "Nightspire Interactive",
-  legalName: "Nightspire Interactive LLC",
+  name: "Spectre River",
+  legalName: "Spectre River LLC",
   address: {
     line1: "1200 Harbor Boulevard, Suite 400",
     line2: "Seattle, WA 98134, United States",
   },
-  supportEmail: "support@nightspireinteractive.com",
+  supportEmail: "support@spectreriver.com",
   domain: "voidrunnergame.com",
 };
 

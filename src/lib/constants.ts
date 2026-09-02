@@ -2,8 +2,8 @@ export const STUDIO = {
   name: "Spectre River",
   legalName: "Spectre River Inc.",
   address: {
-    line1: "6433 Cartier St",
-    line2: "Vancouver, BC V6M 0E2, Canada",
+    line1: "5433 Cartier St",
+    line2: "Vancouver, BC V6M 0F1, Canada",
   },
   supportEmail: "support@spectreriver.com",
   phone: "+1 (672) 208-6448",

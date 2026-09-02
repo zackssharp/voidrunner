@@ -21,8 +21,7 @@ export default function Footer() {
               <span>{GAME.title}</span>
             </div>
             <p className="mt-3 max-w-xs text-sm leading-6 text-muted">
-              A free sci-fi action game built by {STUDIO.name}. No purchase
-              necessary — ever.
+              A free sci-fi action game built by {STUDIO.name}. 
             </p>
           </div>
 

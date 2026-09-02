@@ -57,7 +57,7 @@ export default function SystemRequirements() {
             Runs great on modest hardware
           </h2>
           <p className="mt-4 text-base leading-7 text-muted sm:text-lg">
-            VOIDRUNNER is optimized to run smoothly across a wide range of
+            Fury Racing is optimized to run smoothly across a wide range of
             systems. Check your specs below before downloading.
           </p>
         </div>

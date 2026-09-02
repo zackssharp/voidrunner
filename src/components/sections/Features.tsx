@@ -65,7 +65,7 @@ export default function Features() {
             Built for players who hate downtime
           </h2>
           <p className="mt-4 text-base leading-7 text-muted sm:text-lg">
-            Every system in VOIDRUNNER is designed around one idea: keep you
+            Every system in Fury Racing is designed around one idea: keep you
             in the fight, not the menus.
           </p>
         </div>

@@ -22,8 +22,15 @@ export default function Navbar() {
             <Zap className="h-4.5 w-4.5" strokeWidth={2.5} aria-hidden="true" />
           </span>
           <span>
-            {GAME.title.slice(0, 4)}
-            <span className="text-accent-soft">{GAME.title.slice(4)}</span>
+            {GAME.title.split(" ")[0]}
+            {GAME.title.includes(" ") && (
+              <>
+                {" "}
+                <span className="text-accent-soft">
+                  {GAME.title.split(" ").slice(1).join(" ")}
+                </span>
+              </>
+            )}
           </span>
         </Link>
 

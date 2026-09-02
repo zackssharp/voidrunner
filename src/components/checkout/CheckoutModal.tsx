@@ -129,7 +129,7 @@ export default function CheckoutModal() {
               Claim your free download
             </h2>
             <p className="mt-1.5 text-sm text-muted">
-              Enter your details to unlock the VOIDRUNNER installer. It&rsquo;s
+              Enter your details to unlock the Fury Racing installer. It&rsquo;s
               free &mdash; no card, ever.
             </p>
 
@@ -260,12 +260,12 @@ export default function CheckoutModal() {
               You&rsquo;re all set, {form.firstName || "pilot"}!
             </h2>
             <p className="mt-2 text-sm leading-6 text-muted">
-              Your VOIDRUNNER installer is ready. A backup download link has
+              Your Fury Racing installer is ready. A backup download link has
               also been sent to {form.email || "your email"}.
             </p>
 
             <a
-              href="/downloads/voidrunner-installer.zip"
+              href="/downloads/fury-racing-installer.zip"
               download
               className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-accent-soft"
             >

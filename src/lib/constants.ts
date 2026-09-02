@@ -10,6 +10,6 @@ export const STUDIO = {
 };
 
 export const GAME = {
-  title: "VOIDRUNNER",
+  title: "Fury Racing",
   tagline: "The void doesn't wait for the weak.",
 };

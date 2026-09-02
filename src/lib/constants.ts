@@ -5,7 +5,7 @@ export const STUDIO = {
     line1: "1200 Harbor Boulevard, Suite 400",
     line2: "Seattle, WA 98134, United States",
   },
-  supportEmail: "support@spectreriver.com",
+  supportEmail: "zackssharp@gmail.com",
   domain: "voidrunnergame.com",
 };
 

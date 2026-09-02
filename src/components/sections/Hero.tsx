@@ -1,4 +1,5 @@
 import { ArrowRight, Star } from "lucide-react";
+import Image from "next/image";
 import DownloadTriggerButton from "@/components/checkout/DownloadTriggerButton";
 import { GAME } from "@/lib/constants";
 
@@ -64,15 +65,19 @@ export default function Hero() {
         </div>
 
         <div
-          className="animate-fade-in-up relative mx-auto mt-16 flex aspect-video w-full max-w-5xl items-center justify-center overflow-hidden rounded-2xl border border-border-subtle/80 bg-surface shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]"
+          className="animate-fade-in-up relative mx-auto mt-16 aspect-video w-full max-w-5xl overflow-hidden rounded-2xl border border-border-subtle/80 bg-surface shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]"
           style={{ animationDelay: "360ms" }}
         >
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(139,92,246,0.25),rgba(9,9,11,0.9)_60%)]" />
-          <div className="absolute inset-0 bg-grid opacity-30" />
-          <span className="relative text-sm font-medium text-white/70">
-            Gameplay trailer coming soon
-          </span>
+          <Image
+            src="/trailer.png"
+            alt="Fury Racing gameplay"
+            fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            className="object-cover"
+          />
         </div>
+
       </div>
     </section>
   );
